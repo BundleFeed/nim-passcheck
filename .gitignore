@@ -2,4 +2,4 @@ build
 src/zxcvbn/zxcvbn_abi/zxcvbn-c-2.5
 *.zip
 tmp
-passcheck
+/passcheck
