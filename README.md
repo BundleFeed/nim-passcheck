@@ -19,7 +19,7 @@ The library is building with emscripten to be used in the browser and nodejs.
 ```nim
 import passcheck
 
-echo passStrength("password", @["my name","my company","my website"])
+echo evaluatePassword("password", @["my name","my company","my website"])
 ```
 
 ### Command line tool
