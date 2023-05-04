@@ -49,5 +49,5 @@ at your option. This file may not be copied, modified, or distributed except acc
 
 ### Dependency License
 
-libsodium is licensed under the ISC license. See [their licensing page](https://github.com/jedisct1/libsodium) for further information.
+zxcvbn is licensed under the MIT license. See [their licensing page](https://github.com/tsyrogit/zxcvbn-c) for further information.
 
