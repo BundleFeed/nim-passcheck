@@ -5,7 +5,7 @@ author        = "Geoffrey Picron"
 description   = "Library to test and analyses password strength (mainly using dropbox zxcvbn)"
 license       = "(MIT or Apache-2.0)"
 srcDir        = "src"
-installExt    = @["nim"]
+
 bin           = @["passcheck"]
 
 
