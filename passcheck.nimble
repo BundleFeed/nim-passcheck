@@ -20,14 +20,14 @@ let tmpDir = projectDir & "/tmp"
 # Build
 task updateWrapper, "Generate the wrapper":
   echo "Generating wrapper"
-  exec "nimble c -o:" & tmpDir & "/generate src/passcheck/private/generate.nim"
+  exec "nimble c -o:" & tmpDir & "/generate src/passcheckpkg/private/generate.nim"
   exec tmpDir & "/generate"
 
 taskRequires "configureInstall", "nimterop >= 0.6.13"
 
 task configureInstall, "Download and configure zxcvbn":
-  exec "nimble c -o:" & tmpDir & "/configure passcheck/private/configure.nim"
-  exec tmpDir & "/configure " & projectDir & "/passcheck/zxcvbn"
+  exec "nimble c -o:" & tmpDir & "/configure passcheckpkg/private/configure.nim"
+  exec tmpDir & "/configure " & projectDir & "/passcheckpkg/zxcvbn"
 
 
 before install:
