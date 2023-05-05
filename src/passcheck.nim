@@ -1,5 +1,8 @@
+import ./passcheckpkg/private/check_loaded
 import ./passcheckpkg/zxcvbn_abi/generated
 import std/[os, strutils, math, times, sequtils]
+
+
 
 
 type SecurityBits = cdouble

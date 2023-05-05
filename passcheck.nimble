@@ -23,15 +23,6 @@ task updateWrapper, "Generate the wrapper":
   exec "nimble c -o:" & tmpDir & "/generate src/passcheckpkg/private/generate.nim"
   exec tmpDir & "/generate"
 
-taskRequires "configureInstall", "nimterop >= 0.6.13"
-
-task configureInstall, "Download and configure zxcvbn":
-  exec "nimble c -o:" & tmpDir & "/configure passcheckpkg/private/configure.nim"
-  exec tmpDir & "/configure " & projectDir & "/passcheckpkg/zxcvbn_abi"
-
-
-task install, "Install the package":
-  configureInstallTask()
 
 proc runBrowserWasmTest(test: string, mode = "debug") =
   exec "nim c -d:emscripten -d:" & mode & " --threads:off --passL:'--emrun' -o:build/browser/" & test & ".html tests/" & test & ".nim"
