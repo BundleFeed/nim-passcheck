@@ -25,7 +25,7 @@ echo evaluatePassword("password", @["my name","my company","my website"])
 ### Command line tool
 
 ```bash
-$ passcheck "password" "my name" "my company" "my website"
+$ passcheck "my password" "my name" "my company" "my website"
 Entropy: 9.63 bits
 Crack in seconds
   USER       'my' (entropy: 0.00 bits, multipart entropy: 0.00 bits, repeated: false)
