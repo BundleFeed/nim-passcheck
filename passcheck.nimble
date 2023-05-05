@@ -30,7 +30,7 @@ task configureInstall, "Download and configure zxcvbn":
   exec tmpDir & "/configure " & projectDir & "/passcheckpkg/zxcvbn_abi"
 
 
-before install:
+after install:
   configureInstallTask()
 
 proc runBrowserWasmTest(test: string, mode = "debug") =
