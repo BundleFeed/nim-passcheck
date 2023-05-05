@@ -10,7 +10,7 @@ const projectDir = pathnorm.normalizePath(gorge("pwd") / ".." / ".." / "..")
 
 echo "projectDir is ", projectDir
 
-const buildDir = projectDir / "src" / "zxcvbn" / "zxcvbn_abi"
+const buildDir = projectDir / "src" / "passcheckpkg" / "zxcvbn_abi"
 const zxcvbnExpandedDir = buildDir / "zxcvbn-c-2.5"
 
 # this is relative to the current file
@@ -38,7 +38,7 @@ cImport(zxcvbnSrcDir / "zxcvbn.h", recurse=true, flags="-H", nimfile= generatedF
 
 echo "Generated binding for zxcvbn"
 
-const absolutePath = (projectDir / "src" / "zxcvbn" / "zxcvbn_abi" / "zxcvbn-c-2.5").normalizePath()
+const absolutePath = (buildDir / "zxcvbn-c-2.5").normalizePath()
 
 
 var content = generatedFile.readFile().splitLines()

@@ -1,4 +1,4 @@
-import ./zxcvbn/zxcvbn_abi/generated
+import ./passcheckpkg/zxcvbn_abi/generated
 import std/[os, strutils, math, times, sequtils]
 
 

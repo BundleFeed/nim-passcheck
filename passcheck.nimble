@@ -27,7 +27,7 @@ taskRequires "configureInstall", "nimterop >= 0.6.13"
 
 task configureInstall, "Download and configure zxcvbn":
   exec "nimble c -o:" & tmpDir & "/configure passcheckpkg/private/configure.nim"
-  exec tmpDir & "/configure " & projectDir & "/passcheckpkg/zxcvbn"
+  exec tmpDir & "/configure " & projectDir & "/passcheckpkg/zxcvbn_abi"
 
 
 before install:

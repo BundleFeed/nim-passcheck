@@ -3,3 +3,4 @@ src/zxcvbn/zxcvbn_abi/zxcvbn-c-2.5
 *.zip
 tmp
 /passcheck
+src/passcheckpkg/zxcvbn_abi/zxcvbn-c-2.5

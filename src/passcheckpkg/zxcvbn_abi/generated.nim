@@ -1,4 +1,4 @@
-# Generated @ 2023-05-04T13:51:38+02:00
+# Generated @ 2023-05-05T16:54:09+02:00
 import std/os
 const zxcvbnPath = currentSourcePath().parentDir() / "zxcvbn-c-2.5"
 
